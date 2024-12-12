@@ -6,12 +6,12 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 
 .head{
-    height: 82vh;
+    height: 610px;
     width: 100vw;
     background-color: rgb(255, 255, 255);
     border-radius: 1vw;
@@ -20,9 +20,9 @@ body{
     align-items: center;
 }
 .menu{
-    height: 14vh;
+    height: 90px;
     width:  100vw;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(249,249,249);
     padding-top: 1.5vw;
     padding-left: 4.5vw;
     padding-bottom: 1.5vw;
@@ -56,7 +56,7 @@ body{
     width: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #000000;
     font-size: 26px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -93,27 +93,64 @@ a:visited{
 
 
 .banner{
-    height: 80vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    margin-top: 38px;
+    margin-right: 11px;
+    height: 500px;
+    width:  90vw;
+    background-color: aliceblue;
     position: relative;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 30px;
+    border: 2px rgb(160, 160, 160) solid;
+    box-shadow: 0 4px 8px  7px rgba(23, 23, 23, 0.1);
     
 }
-.banner1{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity: 1;
+.slide{
+    width: 100%;
+    height: 100%;
     position: absolute;
-
+    transition: 1s;
 }
+.nav{
+
+    width: 100vw;
+    padding-right: 35px;
+    padding-left: 20px;
+    position: absolute;
+    top: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav1{
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    padding: 0.7px 6px 0.7px 6px;
+    font-size: small;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    
+}
+.nav1:hover{
+    cursor: pointer;
+    background-color: #2b9bd7;
+    color: #ffffff;
+}
+.black{
+    position: absolute;
+    height: 350px;
+    width: 100vw;
+    background-image: linear-gradient(to top, rgb(12, 12, 12) , transparent);
+    opacity: 1;
+    top: 150px;
+}
+
 .container{
     width: 100vw;
     margin-top: 40px;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(249, 249, 249);
     padding-bottom: 50px;
 }
 .head2{
@@ -122,7 +159,7 @@ a:visited{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #ffffff;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 55px;
     flex-wrap: wrap;
@@ -137,9 +174,10 @@ a:visited{
 }
 
 .card {
-    background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(33, 32, 32));
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(251, 251, 251));
     border-radius: 8px;
-    box-shadow: 0 4px 8px  7px rgba(35, 83, 227, 0.1);
+    border: 2px rgb(232, 231, 231) solid;
+    box-shadow: 0 4px 8px  5px rgba(23, 23, 23, 0.1);
     overflow: hidden;
     text-align: left;
     width: 250px;
@@ -155,13 +193,13 @@ a:visited{
     margin: 10px 2px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    color: #ffffff;
+    color: #000000;
 }
 .card p{
     margin: 0 1px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .card button {
@@ -191,9 +229,9 @@ a:visited{
     color: rgb(255, 255, 255);
 }
 .see1{
-    background-image: linear-gradient(to right, rgb(26, 148, 254) , rgb(2, 54, 158));
+    background-image: linear-gradient(to right, rgb(26, 148, 254) , rgb(0, 68, 203));
     border-radius: 20px;
-    box-shadow: 0 4px 8px  7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px  1px rgba(0, 0, 0, 0.212);
     padding: 10px 30px 10px 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
@@ -201,7 +239,7 @@ a:visited{
 }
 
 .About{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(249, 249, 249);
     margin-top: 50px;
     height: auto;
     width: 100vw;
@@ -225,25 +263,25 @@ a:visited{
     position: relative;
 }
 .img3a{
-    height: 400px;
+    height: 350px;
     width: 300px;
     position: absolute;
     top: 30px;
     left: 10px;
     border: 2px white solid;
-    box-shadow: 0 4px 8px  5px rgba(10, 71, 255, 0.177);
+    box-shadow: 0 4px 8px  5px rgba(1, 1, 1, 0.177);
     overflow: hidden;
 
  
 }
 .img3b{
-    height: 350px;
+    height: 330px;
     width: 300px;
     position: absolute;
     top: 200px;
     left: 200px;
     border: 2px white solid;
-    box-shadow: 0 4px 8px  5px rgba(10, 71, 255, 0.177);
+    box-shadow: 0 4px 8px  5px rgba(1, 1, 1, 0.177);
 }
 
 .abimg{
@@ -258,7 +296,7 @@ a:visited{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    color: #ffffff;
+    color: #000000;
 }
 .about1b{
     height: 100px;
@@ -267,7 +305,7 @@ a:visited{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     padding-left: 5px;
-    color: #ffffff;
+    color: #000000;
 }
 .achieve{
     height: 150px;
@@ -280,15 +318,14 @@ a:visited{
 }
 .achieve_head{
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: #000000;
 }
 .achieve_para{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: small;
-    color: rgb(112, 112, 112);
     margin-left: 2px;
-    color: #c0c0c0;
+    color: #3d3d3d;
 }
 
 .feature{
@@ -297,7 +334,7 @@ a:visited{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(15,15,15);
+    background-color: rgb(249,249,249);
     padding-top: 30px;
     padding-bottom: 70px;
 }
@@ -305,7 +342,7 @@ a:visited{
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     margin-bottom: 40px;
-    color: #ffffff;
+    color: #000000;
 }
 .box{
     display: flex;
@@ -318,9 +355,9 @@ a:visited{
 .box1{
     height: 202px;
     width: 300px;
-    background-image: linear-gradient(to right, rgb(7, 7, 7) , rgb(30, 30, 30));
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255));
     border-radius: 20px;
-    box-shadow: 0 4px 8px  5px rgba(72, 116, 247, 0.1);
+    box-shadow: 0 4px 8px  7px rgba(9, 9, 9, 0.085);
     gap: 100px;
     direction: flex;
     flex-direction: column;
@@ -367,4 +404,17 @@ a:visited{
     border-radius: 20px;
     padding: 6px 20px 6px 15px;
     background-image: linear-gradient(to right, #299bff , rgb(14, 84, 225));
+}
+.foot{
+    margin-top: 40px;
+    height: 80px;
+    width: 100vw;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.foot h4{
+    font-family: Arial, Helvetica, sans-serif;
 }
