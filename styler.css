@@ -213,11 +213,11 @@ pre{
 .popup h3 {
     margin: 10px 5px 12px 3px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-size: 15px;
     color: #000000;
 }
 .popup p{
-    margin: 10px 5px;
+    margin: 10px 6px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #000000;
@@ -379,6 +379,9 @@ pre{
     flex-direction: column;
     align-items: center;
 }
+.box1:hover{
+    transform: scale(1.05);
+}
 .box1_img{
     margin-left: 0px;
     height: 100px;
@@ -414,12 +417,12 @@ pre{
     justify-content: center;
     margin-top: 5px;
 }
-.box1_button button{
+.box1_button a{
     font-size: small;
     border: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
-    padding: 6px 20px 6px 15px;
+    padding: 6px 17px 6px 15px;
     color: white;
     background-image: linear-gradient(to right, #299bff , rgb(14, 84, 225));
 }
