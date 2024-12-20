@@ -1,4 +1,4 @@
-const wellKnownTouristDestinations = [
+let TouristDestinations = [
   {"name": "Eiffel Tower", "latitude": 48.8584, "longitude": 2.2945, "address": "Paris, France"},
   {"name": "Great Wall of China", "latitude": 40.4319, "longitude": 116.5704, "address": "Beijing, China"},
   {"name": "Statue of Liberty", "latitude": 40.6892, "longitude": -74.0445, "address": "New York, USA"},

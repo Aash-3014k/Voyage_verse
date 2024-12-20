@@ -149,7 +149,7 @@ pre{
 .destination-cards {
     display: flex;
     margin-left: 50px;
-    gap: 38px;
+    gap: 28px;
     flex-wrap: wrap;
 }
 
@@ -160,7 +160,8 @@ pre{
     height: 250px;
     border: 1.5px rgb(196, 196, 196) solid;
     border-radius: 10px;
-    box-shadow: 0px 0px 6px 2px rgb(196, 196, 196);
+    box-shadow: 0px 0px 6px 2px rgb(121, 121, 121);
+    margin-bottom: 10px;
 
 }
 
@@ -174,7 +175,7 @@ pre{
 
 .popup {
     position: absolute; 
-    left: 10px; 
+    left: 9px; 
     top: 160px;
     width: 230px;
     height: 110px;
@@ -217,7 +218,7 @@ pre{
     color: #000000;
 }
 .popup p{
-    margin: 10px 6px;
+    margin: 10px 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #000000;
@@ -241,9 +242,7 @@ pre{
     justify-content: center;
     margin-top: 50px;
 }
-.see1:visited{
-    color: rgb(255, 255, 255);
-}
+
 .see1{
     background-image: linear-gradient(to right, rgb(26, 148, 254) , rgb(0, 68, 203));
     border-radius: 20px;
@@ -251,7 +250,9 @@ pre{
     padding: 10px 30px 10px 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
 }
 
 .About{
