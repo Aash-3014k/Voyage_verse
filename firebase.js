@@ -310,7 +310,7 @@ function reset_2(){
 function reset3(){
   console.dir("hio");
   let place=document.querySelector(".place");
-  place.innerText="";
+  place.value="";
   let all_div=document.querySelectorAll(".day-weather");
   for (let i = 0; i < 4; i++) {
     let obj = all_div[i];
