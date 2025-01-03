@@ -4,60 +4,305 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    
- <header class="head" id="Home">
-        <div class="menu">
-             <h1 class="logo"><pre>VOYAGE VERSE</pre></h1>
+    <header>
+        <div id="head1">
+            <div class="logo"><pre>Voyage Verse</pre></div>
             <div class="menu1">
-                <a href="#Home" class="a">Home</a>
-                <a href="#Tour" class="a">Place</a>
-                <a href="" class="a">Blog</a>
-                <a href="#Aboutus" class="a">About us</a>
+                <div class="menu1a home"><a href="#head_part">Home</a></div>
+                <div class="menu1a Tour"><a href="#Main1">Tour</a></div>
+                <div class="menu1a Features"><a href="#Main2">Features</a></div>
+                <div class="menu1a" id="user_p"><a href="http://127.0.0.1:5500/whislist.html" target="_blank">My whislist</a></div>
+                <div class="menu1a about"><a href="#Main3">About</a></div>
             </div>
-            <div class="button1">
-                <button class="button" style="background-image: linear-gradient(to right, rgb(11, 135, 197) , rgb(6, 62, 173));"><pre>Sign in</pre></button>
-                <button class="button" style="background-image: linear-gradient(to right, rgb(11, 139, 203) , rgb(6, 62, 173));"><pre>Login</pre></button>
+            <div class="button">
+                <div class="btn2">
+                  <button>Login</button>
+                </div>
+                <div class="btn1">
+                  <button><pre>Create account</pre></button>
+                </div>
+                <div class="btn3">
+                    <button>Profile</button>
+                </div>
+                <div class="btn4">
+                    <button >Logout</button>
+                </div>
             </div>
         </div>
-        <div class="banner" > 
-         </div>
-    
-     </header>
-    <main>
-    <div class="container" id="Tour">
-        <div class="head2">
-            <h1>Choose your Destinations</h1>
-            <p style="margin-top: 15px;">Explore a world of possiblities and discover your next adventure</p>
-          </div>
-    
-          <div class="destination-cards">  
+        <hr class="line">
+<!-- **************************card*********************************** -->
+        <div class="signin_card">
+            <div class="sign_head">
+                <div>SIGN UP</div>
+                <button class="back-btn sign_back"><img src="image.png" alt="" onclick="back_fun()"></button>
+            </div>
+            <form class="signupForm">
+            <p class="p1">Email</p>
+            <input type="email" class="signupEmail" autocomplete="email">
+            <p class="p2">Password</p>
+            <input type="password" class="signupPass" autocomplete="new-password">
+            <button class="submit">SIGN UP</button>
+            </form>
+            <p class="p3">_______________Other________________</p>
+            <button class="button2"><img src="https://static.vecteezy.com/system/resources/previews/042/165/816/non_2x/google-logo-transparent-free-png.png" alt="" height="40px"></button>
+            <p class="p4">Already a user &#63; <button onclick="login_card_app()">Login</button></p>
         </div>
-        <div class="see">
-            <button class="see1">See all</button>
+    
+        <div class="login_card">
+            <div class="login_head">
+                <div>LOGIN</div>
+                <button class="back-btn sign_back"><img src="image.png" alt="" onclick="back_fun()"></button>
+            </div>
+          <form class="LoginForm">
+          <p class="p1L">Email</p>
+          <input type="email" class="LoginEmail" autocomplete="email">
+          <p class="p2L">Password</p>
+          <input type="password" class="LoginPass" autocomplete="current-password"><br>
+          <input type="checkbox" class="check"> <p class="p5L">Remember me</p>
+          <button class="submit2">LOGIN</button>
+          </form>
+          <p class="p3L">_______________Other________________</p>
+          <button class="button2L"><img src="https://static.vecteezy.com/system/resources/previews/042/165/816/non_2x/google-logo-transparent-free-png.png" alt="" height="35px"></button>
+          <p class="p4L">Need a account &#63; <button onclick="signup_card_app()">Sign up</button></p>
+      </div>
+
+<!-- ********************************profile_card******************************** -->
+<div class="container">
+    <div class="profile-card">
+        <div class="card-header">
+            <div class="profile-img-container">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+                <div class="update-icon" title="Update">
+                    <img src="https://img.icons8.com/ios-filled/50/upload.png" alt="Update">
+                </div>
+            </div>
+            <div class="profile-info">
+                <h2>Kanye West</h2>
+                <p>San Francisco, CA</p>
+            </div>
+            <div class="btn_cont">
+                <button class="edit-btn">EDIT</button>
+                <button class="back-btn"><img src="image.png" alt="" class="back_btn_img"></button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="details">
+                <p class="detailsE"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Email : </strong> kanye@aweso.me</p>
+                <p class="detailsC"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">City : </strong> San Francisco</p>
+                <p class="detailsS"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">State : </strong> CA</p>
+                <p class="detailsCo"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Country : </strong> USA</p>
+                <p class="detailsTel"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Phone : </strong> +1 (415) 655-17-10</p>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <!-- <h3>5</h3> -->
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Whislist</p>
+                </div>
+                <div class="stat">
+                    <!-- <h3>3</h3> -->
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My-Reviews</p>
+                </div>
+                <div class="stat">
+                    <!-- <h3>3</h3> -->
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Posts</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="About" id="Aboutus">
+</div>
+<!--********************************edit detail section ******************************* -->
 
-        <div class="img3">
-            <div class="img3b">
-                 <img src="pexels-efrem-efre-2786187-14707134.jpg" alt="" class="abimg">
+<div class="edit_details">
+    <div class="response">
+        <div>
+            <img src="pic_icon.png" alt="">
+        </div>
+        <button class="set_img">Set profile img</button>
+        <button class="back"  onclick="back()">Back</button>
+    </div>
+    <div class="form">
+        <form>
+            <p id="NameL">Name</p>
+            <input type="text" id="name" required>
+            <p id="CityL">City</p>
+            <input type="text" id="city" required>
+            <p id="StateL">State</p>
+            <input type="text" id="state" required>
+            <p id="CountryL">Country</p>
+            <input type="text" id="country" required>
+            <p id="TelL">Phone</p>
+            <input type="tel" id="phone" required>
+            <button id="update">Update</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- ********************************head2***************************************         -->
+        <div id="head2">
+            <img src="banner.jpg" alt="" width="">
+        </div>
+        <hr class="line" style="margin-bottom: 50px;">
+    </header>
+
+<!-- ****************************curr_converter******************* -->
+<div class="curr_converter_div">
+    <h1>Currency converter</h1>
+    <h3>Enter Amount</h3>
+    <input type="number" class="amount" required>
+    <div class="curr_converter_div_1">
+        <div>
+            <p style="color: white;" >from</p>
+            <div class="in_curr_converter_div_1">
+                <img src="https://flagsapi.com/US/flat/64.png" height="25px" class="flag1">
+                <select name="from" class="opt from"></select>
+            </div>
+        </div>
+        <div class="cont2_img">
+            <img src="2255626-200.png" alt="" height="30px">
+        </div>
+        <div>
+            <p style="color: white;">to</p>
+            <div class="in_curr_converter_div_1">
+                <img src="https://flagsapi.com/IN/flat/64.png" height="25px" class="flag2">
+                <select name="to" class="opt to" class="to"> </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="curr_converter_div_2">
+        <p id="result">Amount</p>
+    </div>
+
+    <button id="exchange">Get exchange rate</button>
+    <button class="back-btn2">Back</button>
+</div>
+
+<!-- **************************weather************************** -->
+
+<div class="weather_card">
+    <h1>Weather Insight</h1>
+    <div class="input-container">
+        <input type="text" placeholder="Enter location..." class="place">
+        <button class="buttonW">Submit</button>
+        <button class="buttonW back-btn3">Back</button>
+    </div>
+    <div class="weather-section">
+        <h2>Today's Weather</h2>
+        <div class="day-weather">
+            <div>TEMP</div>
+            <div>CONDITION</div>
+            <div>HUMIDITY</div>
+        </div>
+
+        <h2>3-Day Forecast</h2>
+        <div class="day-weather">
+            <div>AVG TEMP</div>
+            <div>AVG CONDITION</div>
+            <div>AVG HUMIDITY</div>
+        </div>
+        <div class="day-weather">
+            <div>AVG TEMP</div>
+            <div>AVG CONDITION</div>
+            <div>AVG HUMIDITY</div>
+        </div>
+        <div class="day-weather">
+            <div>AVG TEMP</div>
+            <div>AVG CONDITION</div>
+            <div>AVG HUMIDITY</div>
+        </div>
+    </div>
+</div>
+<!-- **********************************Main*********************************** -->
+     <main>
+<!-- ********************************Main1**************************************** -->
+        <div id="Main1">
+            <hr class="line" >
+            <div class="Main1_heading">
+                <h1>Choose your Destinations</h1>
+                <p style="margin-top: 15px;">Explore a world of possibilities and discover your next adventure</p>
+            </div>
+            <div class="Main1_destination-cards">  
+            </div>
+            <div class="Main1_button">
+                <button class="see">See all</button>
+            </div>
+            <hr class="line">
+        </div>
+<!-- *************************************Main2********************************** -->
+        <hr class="line" >
+        <div id="Main2">
+            <div class="Main2_head">
+                <h1>Features</h1>
+            </div>
+            <div class="Main2_box">
+                <div class="box1">
+                    <div class="box1_img">
+                        <img src="weather.png" alt="" height="120px" style="margin-top: 20px;">
+                    </div>
+                    <div class="box1_head">
+                        <h1>weather insights</h1>
+                    </div>
+                    <div class="box1_para">
+                        <p>Plan your trips with real-time weather updates.</p>
+                    </div>
+                    <div class="box1_button">
+                        <button class="weather_btn">Check</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box1_img">
+                        <img src="curr_converter.png" alt="" height="90px" style="margin-top: 8px;">
+                    </div>
+                    <div class="box1_head">
+                        <h1 >Currency converter</h1>
+                    </div>
+                    <div class="box1_para">
+                        <p >Get the latest exchange rates for your destination.</p>
+                    </div>
+                    <div class="box1_button">
+                        <button class="curr_btn">Check</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box1_img">
+                        <img src="lang_cheat_sheet.png" alt="" height="110px" style="margin-top: 10px;">
+                    </div>
+                    <div class="box1_head">
+                        <h1>Language Cheat Sheet</h1>
+                    </div>
+                    <div class="box1_para">
+                        <p>Learn Key phrases in your destination's language.</p>
+                    </div>
+                    <div class="box1_button">
+                        <button>Check</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- *********************************Main3*************************** -->
+<hr class="line" style="margin-bottom: 50px;">
+<hr class="line">
+       <div id="Main3">
+        <div class="Main3_img">
+            <div class="Main3_img2">
+                <img src="Main3_img2.png" alt="" class="abimg">
             </div> 
-            <div class="img3a">
-        
-                    <img src="pexels-pixabay-302769.jpg" alt="" class="abimg">
+            <div class="Main3_img1">
+                <img src="Main3_img1.png" alt="" class="abimg">
             </div>           
          </div>
-
-        <div class="About1">
-            <div class="about1a">
+         <div class="Main3_content">
+            <div class="content_head">
                 <h2>We helping you <br> Find your dream <br> Vacation</h2>
             </div>
-             <div class="about1b">
+             <div class="content_para">
                 <p>
-                    Experience seamless travel planning<br> with our experts , crefting<br>personalized itineries to ensure<br>unforgettable adventures.
+                    Experience seamless travel planning<br> with our experts , crefting<br>personalized itineraries to ensure<br>unforgettable adventures.
                 </p>
              </div>
              <div class="achieve">
@@ -72,69 +317,26 @@
                      <p class="achieve_para" >Happy<br>customers</p>
                 </div>
              </div>
-        </div>
-        
-    </div>
+         </div>
+       </div>
+     </main>
 
-    <div class="feature">
-        <div class="f_head">
-            <h1>Features</h1>
-        </div>
-        <div class="box">
-            <div class="box1">
-                <div class="box1_img">
-                    <img src="sunny-rainy-cloudy-day-weather-forecast-icon-illustration_47987-10695-removebg-preview.png" alt="" height="120px" style="margin-top: 20px;">
-                </div>
-                <div class="box1_head">
-                    <h1>weather insights</h1>
-                </div>
-                <div class="box1_para">
-                    <p>Plan your trips with real-time weather updates.</p>
-                </div>
-                <div class="box1_button">
-                    <a href="weather.html" class="more_button1"  target="_blank">Check</a>
-                </div>
-            </div>
-            <div class="box1">
-                <div class="box1_img">
-                    <img src="3d-money-exchange-icon-concept-currency-exchange-cash-back-money-conversion-dollar-icon-trendy-modern-vector-3d-style_996812-9347-removebg-preview.png" alt="" height="90px" style="margin-top: 8px;">
-                </div>
-                <div class="box1_head">
-                    <h1 >Currency converter</h1>
-                </div>
-                <div class="box1_para">
-                    <p >Get the latest exchange rates for your destination.</p>
-                </div>
-                <div class="box1_button">
-                    <a href="curr.html" class="more_button1" target="_blank">Check</a>
-                </div>
-            </div>
-            <div class="box1">
-                <div class="box1_img">
-                    <img src="language-translation-3d-icon-download-in-png-blend-fbx-gltf-file-formats--translator-translate-home-screen-app-pack-design-development-icons-7374712.png" alt="" height="110px" style="margin-top: 10px;">
-                </div>
-                <div class="box1_head">
-                    <h1>Language Cheat Sheet</h1>
-                </div>
-                <div class="box1_para">
-                    <p>Learn Key phrases in your destination's language.</p>
-                </div>
-                <div class="box1_button">
-                    <a href="lang.html" class="more_button1" target="_blank">Check</a>
-                </div>
-        </div>
-    </div>
-    </main>
-
-    <footer>
-        <div class="foot">
-            <h4 style="color: #ffffff;">
-                &copy; 2024 VoyageVerse. All Rights Reserved.
-            </h4>
-        </div>
+    <!-- ****************************footer******************************* -->
+    <hr class="line" style="margin-bottom: 50px;">
+    <hr class="line" style="margin-bottom: 0px;">
+     <footer>
+     <div class="foot">
+         <h4 style="color: #ffffff;">
+             &copy; 2024 VoyageVerse. All Rights Reserved.
+         </h4>
+     </div>
     </footer>
-
-    <script src="list.js"></script>
+    <script src="curr_code.js"></script>
+    <script src="curr.js"></script>
     <script src="script.js"></script>
+    <script  src="destination_places_list.js"></script>
+   <script  type="module" src="destination_card.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>

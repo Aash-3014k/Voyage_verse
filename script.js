@@ -1,82 +1,117 @@
-let btn = document.querySelector(".button");
-let mode = "Dark";
+let login_btn = document.querySelector(".btn2 button");
+let sign_up_btn = document.querySelector(".btn1 button");
+let login_card = document.querySelector(".login_card");
+let sign_up_card = document.querySelector(".signin_card")
+let body = document.querySelector('body'); 
+let head1 =document.querySelector("#head1");
+let head2 =document.querySelector("#head2");
+let Main =document.querySelector("main");
+let footer =document.querySelector("footer");
+let line = document.querySelectorAll("hr")
+let logout_btn=document.querySelector(".btn4");
+let profile = document.querySelector(".btn3")
+let curr_card=document.querySelector(".curr_converter_div")
+let weather_card=document.querySelector(".weather_card")
 
-btn.addEventListener("click", () => {
-    let linkElement = document.querySelector("#theme-stylesheet");
-    
-    if (mode == "light") {
-        linkElement.setAttribute("href", "style.css");
-        mode = "dark"; 
-    } else {
-        linkElement.setAttribute("href", "styler.css");
-        mode = "light";  
-    }
-});
-
-let key="o89TTvZX243YSk2ZqljP0FM5saP3_Mq81OabNWNHlVk"
-
-let url="https://api.unsplash.com/search/photos?page=1&query=banaras&client_id=o89TTvZX243YSk2ZqljP0FM5saP3_Mq81OabNWNHlVk"
-
-
-let new_box = [];
-
-for(let i=0;i<TouristDestinations.length;i++){
-    let b_ox = document.createElement('div');
-    b_ox.setAttribute("class", "card")
-    let img_div=document.createElement('img')
-    img_div.setAttribute("class" , "im_g")
-    let pop_up = document.createElement('div');
-    pop_up.setAttribute("class", "popup")
-    let pop_p = document.createElement('p');
-    pop_p.setAttribute("class", "popp")
-    let pop_add = document.createElement('h3');
-    pop_add.setAttribute("class", "place_add")
-    let b_tn = document.createElement('button')
-    b_tn.innerText="Add to whislist";
-    pop_up.appendChild(pop_p);
-    pop_up.appendChild(pop_add);
-    pop_up.appendChild(b_tn);
-    b_ox.appendChild(img_div);
-    b_ox.appendChild(pop_up);
-    new_box.push(b_ox);
+function login_card_app(){
+    head1.style.display = "none";
+    Main.style.display = "none";
+    footer.style.display = "none";
+    line.forEach(hr => hr.style.display = "none");
+    head2.style.display = "none";
+    body.style.display = "flex";
+    login_card.style.display = "flex";
+    sign_up_card.style.display = "none";
+    curr_card.style.display = "none";
+    weather_card.style.display="none";
+}
+function signup_card_app(){
+    head1.style.display = "none";
+    Main.style.display = "none";
+    line.forEach(hr => hr.style.display = "none");
+    head2.style.display = "none";
+    footer.style.display = "none";
+    body.style.display = "flex";
+    sign_up_card.style.display = "flex";
+    login_card.style.display = "none";
+    curr_card.style.display = "none";
+    weather_card.style.display="none";
 }
 
-let result;
-let see_All = document.querySelector(".see1");
-let big_card_box = document.querySelector(".destination-cards");
-let response = async () =>{
-    for(let i=0;i<50;i++){
-        let new_url=`https://api.unsplash.com/search/photos?page=1&query=${TouristDestinations[i].name}&client_id=o89TTvZX243YSk2ZqljP0FM5saP3_Mq81OabNWNHlVk`
-        let data = await fetch(new_url)
-        result = await data.json()
-        let url_img=result.results[4].urls.full
-        let x=new_box[i].querySelector(".im_g");
-        x.setAttribute("src",url_img);
-        let y=new_box[i].querySelector(".popp");
-        y.innerText=TouristDestinations[i].name;
-        let z=new_box[i].querySelector(".place_add");
-        z.innerText=TouristDestinations[i].address;
-    }  
+login_btn.addEventListener("click" ,login_card_app);
+sign_up_btn.addEventListener("click" ,signup_card_app);
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu1');
+    menu.classList.toggle('show');
 }
 
-for(let i=0;i<8;i++){
-    big_card_box.appendChild(new_box[i]);
+document.querySelector(".curr_btn").addEventListener("click",(evt)=>{
+    evt.preventDefault();
+    head1.style.display = "none";
+    Main.style.display = "none";
+    line.forEach(hr => hr.style.display = "none");
+    head2.style.display = "none";
+    footer.style.display = "none";
+    body.style.display = "flex";
+    sign_up_card.style.display = "none";
+    login_card.style.display = "none";
+    curr_card.style.display = "block";
+    weather_card.style.display="none";
+
+})
+document.querySelector(".weather_btn").addEventListener("click",(evt)=>{
+    evt.preventDefault();
+    head1.style.display = "none";
+    Main.style.display = "none";
+    line.forEach(hr => hr.style.display = "none");
+    head2.style.display = "none";
+    footer.style.display = "none";
+    body.style.display = "flex";
+    sign_up_card.style.display = "none";
+    login_card.style.display = "none";
+    curr_card.style.display = "none";
+    weather_card.style.display="block";
+})
+
+function back_fun(){
+   head1.style.display = "flex";
+   Main.style.display = "block";
+   footer.style.display = "block";
+   line.forEach(hr => hr.style.display = "block");
+   head2.style.display = "block";
+   body.style.display = "block";
+   login_card.style.display = "none";
+   sign_up_card.style.display = "none";
+   logout_btn.style.display="none";
+   profile.style.display="none";
+   login_btn.style.display="block";
+   sign_up_btn.style.display="block";
+   document.querySelector(".container").style.display="none"
+   curr_card.style.display = "none";
+   weather_card.style.display = "none";
+   document.querySelector(".menu1").style.marginRight="27vw"
+   document.querySelector("#user_p").style.display="none";
 }
 
-
-let loopIndex = 8;
-
-let see_4 = () => {
-    
-    if(loopIndex>50) return;
-
-    for (let i = loopIndex; i < loopIndex + 4 && loopIndex<TouristDestinations.length; i++) {
-        big_card_box.appendChild(new_box[i]);
-    }
-    loopIndex += 4;
-};
-
-see_All.addEventListener("click", see_4);
-
-
-response();
+function back(){
+    head1.style.display = "flex";
+    Main.style.display = "block";
+    footer.style.display = "block";
+    line.forEach(hr => hr.style.display = "block");
+    head2.style.display = "block";
+    body.style.display = "block";
+    login_card.style.display = "none";
+    sign_up_card.style.display = "none";
+    logout_btn.style.display="block";
+    profile.style.display="block";
+    login_btn.style.display="none";
+    sign_up_btn.style.display="none";
+    document.querySelector(".container").style.display="none"
+    document.querySelector(".menu1").style.marginRight="16.5vw"
+    curr_card.style.display = "none";
+    weather_card.style.display = "none";
+    document.querySelector("#user_p").style.display="block";
+    document.querySelector(".edit_details").style.display="none";
+}
