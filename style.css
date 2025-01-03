@@ -991,7 +991,7 @@ body {
     padding: 20px;
     border: 0.5px rgb(66, 66, 66) solid;    
     display: none;
-    height: 500px;
+    height: auto;
 }
 
 .weather_card h1 {
